@@ -1,0 +1,22 @@
+version=1.0
+
+[servers]
+"server1.example.com" = "server1" # Should be the domain you put in if you connect to the server and the value should be the name with pterodactyl
+"server2.example.com" = "server2"
+
+[motds]
+    [motds.server1]
+    motd = "MOTD server 1"
+    favicon = "server1"
+    id = "ptero-id"
+    [motds.server2]
+    motd = "passthrough"
+    favicon = "passthrough"
+    id = "ptero-id"
+
+[api]
+endpoint = "https://ptero.example.com/api"
+key = "API Key"
+[messages]
+redirect_timer = "You are getting redirected in 30 seconds. If it doesn't work, try again later"
+offline_noperms = "This server is offline and you don't have the permissions to start him"
